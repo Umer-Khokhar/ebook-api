@@ -4,10 +4,13 @@
     // File Layout
     // "rootDir": "./src",
     // "outDir": "./dist",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "nodenext",
     "target": "esnext",
     "types": [],
     // For nodejs:
