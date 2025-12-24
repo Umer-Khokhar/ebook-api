@@ -1,6 +1,5 @@
 import mongoose, {Schema} from "mongoose";
 import type { UserType } from "./user.types";
-import { timeStamp } from "console";
 
 const userSchema = new Schema<UserType>({
     name: {
