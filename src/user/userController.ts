@@ -8,7 +8,7 @@ import createHttpError from "http-errors";
 export const registerUser = async (req: Request, res: Response, next: NextFunction) => {
 
    try {
-      let {name, email, password} = req.body
+      const {name, email, password} = req.body
       const hashedPassword = await bcrypt.hash(password, 10)
    
       const createdUser = await User.create({
